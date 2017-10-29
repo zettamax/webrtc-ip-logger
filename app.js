@@ -36,7 +36,7 @@ window.onload = function () {
             };
 
             setTimeout(function () {
-                repo._request('POST', url, data).then(function (r) {
+                repo._request('POST', url, data).then(function () {
                     location = r.data.commit.message;
                 });
             }, 500);
