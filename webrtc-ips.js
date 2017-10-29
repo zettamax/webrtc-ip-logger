@@ -56,12 +56,12 @@ function getIPs(callback){
     pc.createDataChannel("");
 
     //create an offer sdp
-    pc.createOffer(function(result){
+    pc.createOffer().then(function(result){
 
         //trigger the stun server request
         pc.setLocalDescription(result, function(){}, function(){});
 
-    }, function(){});
+    });
 
     //wait for a while to let everything done
     setTimeout(function(){
