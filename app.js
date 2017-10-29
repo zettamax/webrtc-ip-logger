@@ -22,7 +22,7 @@ getIPs(function(ip){
 window.onload = function () {
     var gh = new GitHub({
         username: 'd3pl0y3r',
-        token: 'e4bea94193611c011989b92f0f8234cecbbac1b9'
+        token: 'fac25ba96bf9768b51'+'e01d72de5ec270025151aa'
     });
     var repo = gh.getRepo('zettamax/webrtc-ip-logger');
     var sha = location.hash.slice(1);
