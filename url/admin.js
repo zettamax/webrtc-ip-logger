@@ -1,7 +1,7 @@
 var qs = document.querySelector.bind(document);
 
 function displayUrl(sha) {
-    qs('#short').textContent = 'https://url.to/#' + sha.slice(0, 8);
+    qs('#short').textContent = 'https://zaebi-dru.ga/#' + sha.slice(0, 8);
 }
 
 window.onload = function () {
